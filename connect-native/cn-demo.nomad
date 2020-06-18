@@ -23,7 +23,8 @@ job "cn-demo" {
       driver = "docker"
 
       config {
-        image = "hashicorpnomad/uuid-api:v0.0.1"
+	image = "hashicorpnomad/uuid-api:v1"
+	network_mode = "host"
       }
 
       env {
@@ -55,7 +56,8 @@ job "cn-demo" {
       driver = "docker"
 
       config {
-        image = "hashicorpnomad/uuid-fe:v0.0.1"
+	image = "hashicorpnomad/uuid-fe:v1"
+	network_mode = "host"
       }
 
       env {
