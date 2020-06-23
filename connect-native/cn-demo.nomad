@@ -3,8 +3,6 @@ job "cn-demo" {
 
   group "generator" {
     network {
-      mode = "host"
-
       port "api" {
         // nomads choice
       }
@@ -13,9 +11,10 @@ job "cn-demo" {
     service {
       name = "uuid-api"
       port = "${NOMAD_PORT_api}"
+      task = "generate"
 
       connect {
-        native = "generate"
+        native = true
       }
     }
 
@@ -23,8 +22,8 @@ job "cn-demo" {
       driver = "docker"
 
       config {
-	image = "hashicorpnomad/uuid-api:v1"
-	network_mode = "host"
+        image        = "hashicorpnomad/uuid-api:v1"
+        network_mode = "host"
       }
 
       env {
@@ -36,8 +35,6 @@ job "cn-demo" {
 
   group "frontend" {
     network {
-      mode = "host"
-
       port "http" {
         static = 9800
       }
@@ -46,9 +43,10 @@ job "cn-demo" {
     service {
       name = "uuid-fe"
       port = "9800"
+      task = "frontend"
 
       connect {
-        native = "frontend"
+        native = true
       }
     }
 
@@ -56,8 +54,8 @@ job "cn-demo" {
       driver = "docker"
 
       config {
-	image = "hashicorpnomad/uuid-fe:v1"
-	network_mode = "host"
+        image        = "hashicorpnomad/uuid-fe:v1"
+        network_mode = "host"
       }
 
       env {
