@@ -50,11 +50,16 @@ func Environment(name string) *Config {
 }
 
 func Consul() *api.Client {
+	logEnvironment("CONSUL_HTTP_ADDR")
+	logEnvironment("CONSUL_NAMESPACE")
 	logEnvironment("CONSUL_CACERT")
 	logEnvironment("CONSUL_CLIENT_CERT")
 	logEnvironment("CONSUL_CLIENT_KEY")
 	logEnvironment("CONSUL_HTTP_SSL")
 	logEnvironment("CONSUL_HTTP_SSL_VERIFY")
+	logEnvironment("CONSUL_TLS_SERVER_NAME")
+	logEnvironment("CONSUL_GRPC_ADDR")
+	logEnvironment("CONSUL_HTTP_TOKEN_FILE")
 	consulConfig := api.DefaultConfig()
 	consulClient, err := api.NewClient(consulConfig)
 	if err != nil {
