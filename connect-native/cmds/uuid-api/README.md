@@ -4,7 +4,7 @@
 #### Build
 
 ```bash
-DOCKER_BUILDKIT=1 docker build --ssh default -t hashicorpnomad/uuid-api:<version> .
+DOCKER_BUILDKIT=1 docker build --no-cache --ssh default -t hashicorpnomad/uuid-api:<version> .
 ```
 
 #### Publish
