@@ -11,7 +11,6 @@ job "cn-demo" {
     service {
       name = "uuid-api"
       port = "${NOMAD_PORT_api}"
-      task = "generate"
 
       connect {
         native = true
@@ -22,7 +21,7 @@ job "cn-demo" {
       driver = "docker"
 
       config {
-        image        = "hashicorpnomad/uuid-api:v1"
+        image        = "hashicorpnomad/uuid-api:v3"
         network_mode = "host"
       }
 
@@ -43,7 +42,6 @@ job "cn-demo" {
     service {
       name = "uuid-fe"
       port = "9800"
-      task = "frontend"
 
       connect {
         native = true
@@ -54,7 +52,7 @@ job "cn-demo" {
       driver = "docker"
 
       config {
-        image        = "hashicorpnomad/uuid-fe:v1"
+        image        = "hashicorpnomad/uuid-fe:v3"
         network_mode = "host"
       }
 
