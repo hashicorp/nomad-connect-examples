@@ -12,9 +12,23 @@ func init() {
 	indexHTML, err = template.New("index").Parse(`
 <html>
 <head>
+<style>
+	body {
+		background-image: linear-gradient(-45deg, white, yellow);
+	}
+	h1 {
+		color: #2f4f4f;
+		font-size: 3em;
+		padding-top: 1.1em;
+	}
+</style>
 </head>
 <body>
-  <center>uuid: {{.UUID}}</center>
+	<center>
+		<h1>
+			{{.UUID}}
+		</h1>
+	</center>
 </body>
 </html>
 `)
