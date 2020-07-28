@@ -11,6 +11,14 @@ import (
 	"nomadproject.io/demo/connect-native/internal/common"
 )
 
+const (
+	// When using Consul DNS features, this DNS format automatically resolves
+	// for the desired connect-enabled consul service.
+	//
+	// https://www.consul.io/docs/agent/dns#connect-capable-service-lookups
+	upstreamURL = "https://%s.connect.consul/"
+)
+
 type response struct {
 	UUID string
 }
@@ -41,7 +49,7 @@ func index(upstream string, client *http.Client) http.HandlerFunc {
 
 func getUUID(upstream string, client *http.Client) (string, error) {
 	response, err := client.Get(fmt.Sprintf(
-		"https://%s.service.consul/",
+		upstreamURL,
 		upstream,
 	))
 	if err != nil {
