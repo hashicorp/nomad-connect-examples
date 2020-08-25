@@ -61,7 +61,7 @@ job "ig-bridge-demo" {
   # The ingress gateway above makes access to the service possible over normal HTTP.
   # For example,
   #
-  # $ g
+  # $ curl $(dig +short @127.0.0.1 -p 8600 uuid-api.ingress.dc1.consul. ANY):8080
   group "generator" {
     network {
       mode = "host"
