@@ -2,6 +2,9 @@ job "ig-bridge-demo" {
 
   datacenters = ["dc1"]
 
+  # This group will have a task providing the ingress gateway automatically
+  # created by Nomad. The ingress gateway is based on the Envoy proxy being
+  # managed by the docker driver.
   group "ingress-group" {
 
     network {
@@ -22,7 +25,7 @@ job "ig-bridge-demo" {
       connect {
         gateway {
 
-          // Consul gateway [envoy] proxy options.
+          # Consul gateway [envoy] proxy options.
           proxy {
             # The following options are automatically set by Nomad if not
             # explicitly configured when using bridge networking.
@@ -37,7 +40,7 @@ job "ig-bridge-demo" {
             # https://www.nomadproject.io/docs/job-specification/gateway#proxy-parameters
           }
 
-          // Consul Ingress Gateway Configuration Entry.
+          # Consul Ingress Gateway Configuration Entry.
           ingress {
             # Nomad will automatically manage the Configuration Entry in Consul
             # given the parameters in the ingress block.
@@ -65,9 +68,7 @@ job "ig-bridge-demo" {
   group "generator" {
     network {
       mode = "host"
-      port "api" {
-        to = -1
-      }
+      port "api" {}
     }
 
     service {

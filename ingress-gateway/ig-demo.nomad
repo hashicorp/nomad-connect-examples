@@ -2,6 +2,9 @@ job "ig-demo" {
 
   datacenters = ["dc1"]
 
+  # This group will have a task providing the ingress gateway automatically
+  # created by Nomad. The ingress gateway is based on the Envoy proxy being
+  # managed by the docker driver.
   group "ingress-group" {
 
     network {
@@ -31,14 +34,14 @@ job "ig-demo" {
       connect {
         gateway {
 
-          // Consul gateway [envoy] proxy options.
+          # Consul gateway [envoy] proxy options.
           proxy {
             # Envoy proxy options are documented at
             # https://www.nomadproject.io/docs/job-specification/gateway#proxy-parameters
             connect_timeout = "500ms"
           }
 
-          // Consul Ingress Gateway Configuration Entry.
+          # Consul Ingress Gateway Configuration Entry.
           ingress {
             # Nomad will automatically manage the Configuration Entry in Consul
             # given the parameters in the ingress block.
@@ -95,4 +98,3 @@ job "ig-demo" {
     }
   }
 }
-
