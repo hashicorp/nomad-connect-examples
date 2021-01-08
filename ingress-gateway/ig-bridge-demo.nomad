@@ -73,7 +73,7 @@ job "ig-bridge-demo" {
 
     service {
       name = "uuid-api"
-      port = "${NOMAD_PORT_api}"
+      port = "api"
 
       connect {
         native = true
