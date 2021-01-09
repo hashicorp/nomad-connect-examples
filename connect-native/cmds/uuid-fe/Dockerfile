@@ -1,8 +1,9 @@
 FROM golang:alpine as builder
 WORKDIR /build
+ADD ./Dockerfile /build
 
 RUN apk add git
-RUN git clone git@github.com:hashicorp/nomad-connect-examples.git
+RUN git clone https://github.com/hashicorp/nomad-connect-examples
 
 WORKDIR /build/nomad-connect-examples/connect-native/cmds/uuid-fe
 RUN go version && \
