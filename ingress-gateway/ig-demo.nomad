@@ -69,14 +69,12 @@ job "ig-demo" {
   group "generator" {
     network {
       mode = "host"
-      port "api" {
-        to = -1
-      }
+      port "api" {}
     }
 
     service {
       name = "uuid-api"
-      port = "${NOMAD_PORT_api}"
+      port = "api"
 
       connect {
         native = true
@@ -87,7 +85,7 @@ job "ig-demo" {
       driver = "docker"
 
       config {
-        image        = "hashicorpnomad/uuid-api:v3"
+        image        = "hashicorpnomad/uuid-api:v5"
         network_mode = "host"
       }
 
