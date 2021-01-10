@@ -16,7 +16,7 @@ const (
 	// for the desired connect-enabled consul service.
 	//
 	// https://www.consul.io/docs/agent/dns#connect-capable-service-lookups
-	upstreamURL = "https://%s.connect.consul/"
+	upstreamURL = "https://%s.service.consul/"
 )
 
 type response struct {
