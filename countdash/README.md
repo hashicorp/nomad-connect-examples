@@ -42,6 +42,6 @@ Publish a manifest for `v<n>`.
 ```bash
 $ docker manifest create hashicorpnomad/counter-api:<v> --amend hashicorpnomad/counter-api:<v>-arm64 --amend hashicorpnomad/counter-api:<v>-amd64
 $ docker manifest push hashicorpnomad/counter-api:<v>
+```
 
 Repeat for `counter-dashboard`.
-```
