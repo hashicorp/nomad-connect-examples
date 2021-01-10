@@ -12,7 +12,7 @@ job "cn-bridge-demo" {
 
     service {
       name = "uuid-api"
-      port = "${NOMAD_PORT_api}"
+      port = "api"
 
       connect {
         native = true
@@ -23,7 +23,7 @@ job "cn-bridge-demo" {
       driver = "docker"
 
       config {
-        image = "hashicorpnomad/uuid-api:v3"
+        image = "hashicorpnomad/uuid-api:v5"
       }
 
       env {
@@ -43,7 +43,7 @@ job "cn-bridge-demo" {
 
     service {
       name = "uuid-fe"
-      port = "9800"
+      port = "http"
 
       connect {
         native = true
@@ -54,14 +54,14 @@ job "cn-bridge-demo" {
       driver = "docker"
 
       config {
-        image        = "hashicorpnomad/uuid-fe:v3"
+        image        = "hashicorpnomad/uuid-fe:v5"
         network_mode = "host"
       }
 
       env {
         UPSTREAM = "uuid-api"
         BIND     = "0.0.0.0"
-        PORT     = "9800"
+        PORT     = "${NOMAD_PORT_http}"
       }
     }
   }
