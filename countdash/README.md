@@ -24,10 +24,24 @@ $ docker run --rm --net=host hashicorpnomad/counter-api:test
 $ docker run --rm --net=host --env COUNTING_SERVICE_URL="http://localhost:9001" hashicorpnomad/counter-dashboard:test
 ```
 
-#### Upload to Docker Hub
+#### Publish
+
+Build image and push to docker hub.
+
+`<version>` format is `v<n>-<arch>` (e.g. `v1-amd64`).
+
 ```bash
-# replace <version> with the next version number
-docker login
-docker build -t hashicorpnomad/counter-dashboard:<version> .
-docker push hashicorpnomad/counter-dashboard:<version>
+$ docker build --no-cache -t hashicorpnomad/counter-api:<version>
+$ docker push hashicorpnomad/counter-api:<version>
+```
+
+Also build and publish for `arm64` (e.g. Graviton)
+
+Publish a manifest for `v<n>`.
+
+```bash
+$ docker manifest create hashicorpnomad/counter-api:<v> --amend hashicorpnomad/counter-api:<v>-arm64 --amend hashicorpnomad/counter-api:<v>-amd64
+$ docker manifest push hashicorpnomad/counter-api:<v>
+
+Repeat for `counter-dashboard`.
 ```
