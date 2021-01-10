@@ -84,7 +84,7 @@ job "ig-bridge-demo" {
       driver = "docker"
 
       config {
-        image        = "hashicorpnomad/uuid-api:v3"
+        image        = "hashicorpnomad/uuid-api:v5"
         network_mode = "host"
       }
 
