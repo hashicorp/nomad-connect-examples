@@ -27,7 +27,7 @@ Build image and push to docker hub.
 `<version>` format is `v<n>-<arch>` (e.g. `v1-amd64`).
 
 ```bash
-$ docker build -t hashicorpnomad/uuid-api:<version> .
+$ docker build --no-cache -t hashicorpnomad/uuid-api:<version> .
 $ docker push hashicorpnomad/uuid-api:<version>
 ```
 
