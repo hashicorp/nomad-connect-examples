@@ -1,0 +1,46 @@
+name: ci
+on: [push]
+env:
+  GOBIN: /opt/bin
+jobs:
+  tests-connect-native:
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: connect-native
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2
+        with:
+          stable: true
+          go-version: 1.17.7
+      - name: Vet
+        run: |
+          go vet ./...
+      - name: Tests
+        run: |
+          go test -race -v ./...
+      - name: Compile
+        run: |
+          go build -o $GOBIN/uuid-api cmds/uuid-api/main.go
+          go build -o $GOBIN/uuid-fe  cmds/uuid-fe/main.go
+  tests-grpc-checks:
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: grpc-checks
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2
+        with:
+          stable: true
+          go-version: 1.17.7
+      - name: Vet
+        run: |
+          go vet ./...
+      - name: Tests
+        run: |
+          go test -race -v ./...
+      - name: Compile
+        run: |
+          go build -o $GOBIN/grpc-checks main.go
