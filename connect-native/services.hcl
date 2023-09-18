@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 # This Consul service definition file can be used to run
 # the two connect native service examples locally using
 # only Consul (No Nomad or Docker required).
