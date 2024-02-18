@@ -300,8 +300,8 @@ github.com/grpc-ecosystem/grpc-gateway v1.16.0/go.mod h1:BDjrQk3hbvj6Nolgz8mAMFb
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.7.0/go.mod h1:hgWBS7lorOAVIJEQMi4ZsPv9hVvWI6+ch50m39Pf2Ks=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.11.3 h1:lLT7ZLSzGLI08vc9cpd+tYmNWjdKDqyr/2L+f6U12Fk=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.11.3/go.mod h1:o//XUCC/F+yRGJoPO/VU0GSB0f8Nhgmxx0VIRUvaC0w=
-github.com/hashicorp/consul v1.17.2 h1:7IGkw5Tb7Tg72Cnq2cvGtrh70wg48cUhgbBFc+iJ3/E=
-github.com/hashicorp/consul v1.17.2/go.mod h1:lHIfHJXnwvR5Xu0vLqfp0lNEAViQzArn/pw2QzzyhAk=
+github.com/hashicorp/consul v1.17.3 h1:ARFZxcWhv13DCeBCza2vZZSJa1DCaEl6cAfcqUD5aSo=
+github.com/hashicorp/consul v1.17.3/go.mod h1:RJuWxVy7Wfn2tBOvvp/Pw8qUdiLos0PmpWkYcBKRxsY=
 github.com/hashicorp/consul-awsauth v0.0.0-20220713182709-05ac1c5c2706 h1:1ZEjnveDe20yFa6lSkfdQZm5BR/b271n0MsB5R2L3us=
 github.com/hashicorp/consul-awsauth v0.0.0-20220713182709-05ac1c5c2706/go.mod h1:1Cs8FlmD1BfSQXJGcFLSV5FuIx1AbJP+EJGdxosoS2g=
 github.com/hashicorp/consul-net-rpc v0.0.0-20221205195236-156cfab66a69 h1:wzWurXrxfSyG1PHskIZlfuXlTSCj1Tsyatp9DtaasuY=
