@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/gorilla/mux v1.8.1
-	github.com/hashicorp/consul v1.18.1
+	github.com/hashicorp/consul v1.18.2
 	github.com/hashicorp/consul/api v1.28.3
 	github.com/hashicorp/go-uuid v1.0.3
 	github.com/pkg/errors v0.9.1
@@ -26,7 +26,7 @@ require (
 	github.com/cncf/xds/go v0.0.0-20230607035331-e9ce68804cb4 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/envoyproxy/go-control-plane v0.11.1 // indirect
-	github.com/envoyproxy/protoc-gen-validate v1.0.1 // indirect
+	github.com/envoyproxy/protoc-gen-validate v1.0.2 // indirect
 	github.com/fatih/color v1.16.0 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/btree v1.0.1 // indirect
