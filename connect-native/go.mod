@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/gorilla/mux v1.8.1
-	github.com/hashicorp/consul v1.19.1
+	github.com/hashicorp/consul v1.19.2
 	github.com/hashicorp/consul/api v1.29.4
 	github.com/hashicorp/go-uuid v1.0.3
 	github.com/pkg/errors v0.9.1
@@ -30,7 +30,7 @@ require (
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/btree v1.0.1 // indirect
 	github.com/hashicorp/consul-net-rpc v0.0.0-20221205195236-156cfab66a69 // indirect
-	github.com/hashicorp/consul/envoyextensions v0.7.0 // indirect
+	github.com/hashicorp/consul/envoyextensions v0.7.3 // indirect
 	github.com/hashicorp/consul/proto-public v0.6.2 // indirect
 	github.com/hashicorp/consul/sdk v0.16.1 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
