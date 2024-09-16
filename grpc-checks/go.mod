@@ -2,7 +2,7 @@ module github.com/hashicorp/nomad/demo/grpc-checks
 
 go 1.21
 
-require google.golang.org/grpc v1.66.0
+require google.golang.org/grpc v1.66.2
 
 require (
 	golang.org/x/net v0.26.0 // indirect
