@@ -1,11 +1,13 @@
 module nomadproject.io/demo/connect-native
 
-go 1.21
+go 1.22
+
+toolchain go1.23.2
 
 require (
 	github.com/gorilla/mux v1.8.1
-	github.com/hashicorp/consul v1.19.2
-	github.com/hashicorp/consul/api v1.29.4
+	github.com/hashicorp/consul v1.20.0
+	github.com/hashicorp/consul/api v1.29.5
 	github.com/hashicorp/go-uuid v1.0.3
 	github.com/pkg/errors v0.9.1
 )
@@ -16,7 +18,7 @@ require (
 	github.com/Microsoft/go-winio v0.6.1 // indirect
 	github.com/armon/go-metrics v0.4.1 // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
-	github.com/aws/aws-sdk-go v1.44.289 // indirect
+	github.com/aws/aws-sdk-go v1.55.5 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/census-instrumentation/opencensus-proto v0.4.1 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
@@ -30,8 +32,7 @@ require (
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/btree v1.0.1 // indirect
 	github.com/hashicorp/consul-net-rpc v0.0.0-20221205195236-156cfab66a69 // indirect
-	github.com/hashicorp/consul/envoyextensions v0.7.3 // indirect
-	github.com/hashicorp/consul/proto-public v0.6.2 // indirect
+	github.com/hashicorp/consul/envoyextensions v0.7.4 // indirect
 	github.com/hashicorp/consul/sdk v0.16.1 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-bexpr v0.1.2 // indirect
@@ -87,7 +88,6 @@ require (
 	golang.org/x/tools v0.12.1-0.20230815132531-74c255bcf846 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20230711160842-782d3b101e98 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230711160842-782d3b101e98 // indirect
-	google.golang.org/grpc v1.58.3 // indirect
 	google.golang.org/protobuf v1.33.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
