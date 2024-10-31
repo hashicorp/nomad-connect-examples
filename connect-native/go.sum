@@ -205,8 +205,8 @@ github.com/grpc-ecosystem/grpc-gateway/v2 v2.16.0 h1:YBftPWNWd4WwGqtY2yeZL2ef8rH
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.16.0/go.mod h1:YN5jB8ie0yfIUg6VvR9Kz84aCaG7AsGZnLjhHbUqwPg=
 github.com/hashi-derek/grpc-proxy v0.0.0-20231207191910-191266484d75 h1:V5Uqf7VoWMd6UhNf/5EMA8LMPUm95GYvk2YF5SzT24o=
 github.com/hashi-derek/grpc-proxy v0.0.0-20231207191910-191266484d75/go.mod h1:5eEnHfK72jOkp4gC1dI/Q/E9MFNOM/ewE/vql5ijV3g=
-github.com/hashicorp/consul v1.20.0 h1:nbpGK1rhE48pp2U5LDt8MG+uMGBxzeggLg/V/1pyxmo=
-github.com/hashicorp/consul v1.20.0/go.mod h1:3JsTmNzlg+F0ritWkoOqZAM4dsoKaksk6Cb3ur1NJK8=
+github.com/hashicorp/consul v1.20.1 h1:ZC4hZnJKLVTRIsC+3A4ikN0R+MmETvb2bpjeqOlaGvI=
+github.com/hashicorp/consul v1.20.1/go.mod h1:znTwsjmwgvP2UfH82tdN7hvBqlHJhE0TSG1rx45kvfs=
 github.com/hashicorp/consul-awsauth v0.0.0-20220713182709-05ac1c5c2706 h1:1ZEjnveDe20yFa6lSkfdQZm5BR/b271n0MsB5R2L3us=
 github.com/hashicorp/consul-awsauth v0.0.0-20220713182709-05ac1c5c2706/go.mod h1:1Cs8FlmD1BfSQXJGcFLSV5FuIx1AbJP+EJGdxosoS2g=
 github.com/hashicorp/consul-net-rpc v0.0.0-20221205195236-156cfab66a69 h1:wzWurXrxfSyG1PHskIZlfuXlTSCj1Tsyatp9DtaasuY=
@@ -215,8 +215,8 @@ github.com/hashicorp/consul/api v1.30.0 h1:ArHVMMILb1nQv8vZSGIwwQd2gtc+oSQZ6Caly
 github.com/hashicorp/consul/api v1.30.0/go.mod h1:B2uGchvaXVW2JhFoS8nqTxMD5PBykr4ebY4JWHTTeLM=
 github.com/hashicorp/consul/envoyextensions v0.7.4 h1:6lgG7lOxODFKJUSB4dyVJkFDyVFdgOuyTBl3uU5qqjY=
 github.com/hashicorp/consul/envoyextensions v0.7.4/go.mod h1:gskq2lifJN0PkDfec+AkUEGQqfNapv9wvwaDk9Biawc=
-github.com/hashicorp/consul/proto-public v0.6.3 h1:iDA+fHtcqIc3kMMWkND6CD9W98jfKER0EC9GI7jOUvg=
-github.com/hashicorp/consul/proto-public v0.6.3/go.mod h1:a1pOtKbQ2+iRnMlEA2bywlEZ0nbCQ2pS7GDQN6pqLwU=
+github.com/hashicorp/consul/proto-public v0.6.2 h1:+DA/3g/IiKlJZb88NBn0ZgXrxJp2NlvCZdEyl+qxvL0=
+github.com/hashicorp/consul/proto-public v0.6.2/go.mod h1:cXXbOg74KBNGajC+o8RlA502Esf0R9prcoJgiOX/2Tg=
 github.com/hashicorp/consul/sdk v0.16.1 h1:V8TxTnImoPD5cj0U9Spl0TUxcytjcbbJeADFF07KdHg=
 github.com/hashicorp/consul/sdk v0.16.1/go.mod h1:fSXvwxB2hmh1FMZCNl6PwX0Q/1wdWtHJcZ7Ea5tns0s=
 github.com/hashicorp/errwrap v1.0.0/go.mod h1:YH+1FKiLXxHSkmPseP+kNlulaMuP3n2brvKWEqk/Jc4=
