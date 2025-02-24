@@ -1,7 +1,8 @@
 module nomadproject.io/demo/connect-native
 
-go 1.22
-toolchain go1.23.2
+go 1.22.12
+
+toolchain go1.23.5
 
 require (
 	github.com/gorilla/mux v1.8.1
