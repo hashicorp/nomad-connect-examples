@@ -1,7 +1,8 @@
 module github.com/hashicorp/nomad/demo/grpc-checks
 
-go 1.22.7
-toolchain go1.23.2
+go 1.23.0
+
+toolchain go1.24.1
 
 require google.golang.org/grpc v1.71.0
 
