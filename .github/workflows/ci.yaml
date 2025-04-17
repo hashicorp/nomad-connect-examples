@@ -4,7 +4,7 @@ env:
   GOBIN: /opt/bin
 jobs:
   tests-connect-native:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: connect-native
@@ -25,7 +25,7 @@ jobs:
           go build -o $GOBIN/uuid-api cmds/uuid-api/main.go
           go build -o $GOBIN/uuid-fe  cmds/uuid-fe/main.go
   tests-grpc-checks:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: grpc-checks
