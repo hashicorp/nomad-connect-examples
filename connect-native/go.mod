@@ -7,7 +7,7 @@ toolchain go1.24.2
 require (
 	github.com/gorilla/mux v1.8.1
 	github.com/hashicorp/consul v1.20.6
-	github.com/hashicorp/consul/api v1.32.0
+	github.com/hashicorp/consul/api v1.32.1
 	github.com/hashicorp/go-uuid v1.0.3
 	github.com/pkg/errors v0.9.1
 )
