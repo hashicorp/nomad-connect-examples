@@ -26,6 +26,15 @@ func (s *Server) Check(ctx context.Context, hcr *ghc.HealthCheckRequest) (*ghc.H
 	}, nil
 }
 
+func (s *Server) List(ctx context.Context, hlr *ghc.HealthListRequest) (*ghc.HealthListResponse, error) {
+	log.Printf("List (%s)", hlr.String())
+	return &ghc.HealthListResponse{
+		Statuses: map[string]*ghc.HealthCheckResponse{
+			"foo": {Status: ghc.HealthCheckResponse_SERVING},
+		},
+	}, nil
+}
+
 func (s *Server) Watch(hcr *ghc.HealthCheckRequest, hws ghc.Health_WatchServer) error {
 	log.Printf("Watch:%s (%s)", hcr.Service, hcr.String())
 	return hws.Send(&ghc.HealthCheckResponse{
