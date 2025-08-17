@@ -1,12 +1,12 @@
 module nomadproject.io/demo/connect-native
 
-go 1.23.10
+go 1.23.12
 
 toolchain go1.24.2
 
 require (
 	github.com/gorilla/mux v1.8.1
-	github.com/hashicorp/consul v1.21.3
+	github.com/hashicorp/consul v1.21.4
 	github.com/hashicorp/consul/api v1.32.1
 	github.com/hashicorp/go-uuid v1.0.3
 	github.com/pkg/errors v0.9.1
@@ -81,15 +81,15 @@ require (
 	github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
 	github.com/xeipuuv/gojsonschema v1.2.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.0.0 // indirect
-	golang.org/x/crypto v0.36.0 // indirect
-	golang.org/x/exp v0.0.0-20250305212735-054e65f0b394 // indirect
-	golang.org/x/mod v0.24.0 // indirect
-	golang.org/x/net v0.38.0 // indirect
-	golang.org/x/sync v0.15.0 // indirect
-	golang.org/x/sys v0.31.0 // indirect
-	golang.org/x/text v0.23.0 // indirect
-	golang.org/x/time v0.11.0 // indirect
-	golang.org/x/tools v0.31.0 // indirect
+	golang.org/x/crypto v0.41.0 // indirect
+	golang.org/x/exp v0.0.0-20250808145144-a408d31f581a // indirect
+	golang.org/x/mod v0.27.0 // indirect
+	golang.org/x/net v0.43.0 // indirect
+	golang.org/x/sync v0.16.0 // indirect
+	golang.org/x/sys v0.35.0 // indirect
+	golang.org/x/text v0.28.0 // indirect
+	golang.org/x/time v0.12.0 // indirect
+	golang.org/x/tools v0.36.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240814211410-ddb44dafa142 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240823204242-4ba0660f739c // indirect
 	google.golang.org/protobuf v1.34.2 // indirect
