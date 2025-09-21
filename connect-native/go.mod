@@ -1,13 +1,11 @@
 module nomadproject.io/demo/connect-native
 
-go 1.23.12
-
-toolchain go1.24.2
+go 1.25.0
 
 require (
 	github.com/gorilla/mux v1.8.1
 	github.com/hashicorp/consul v1.21.4
-	github.com/hashicorp/consul/api v1.32.1
+	github.com/hashicorp/consul/api v1.32.3
 	github.com/hashicorp/go-uuid v1.0.3
 	github.com/pkg/errors v0.9.1
 )
@@ -35,7 +33,7 @@ require (
 	github.com/google/btree v1.0.1 // indirect
 	github.com/hashicorp/consul-net-rpc v0.0.0-20221205195236-156cfab66a69 // indirect
 	github.com/hashicorp/consul/envoyextensions v0.7.7 // indirect
-	github.com/hashicorp/consul/sdk v0.16.1 // indirect
+	github.com/hashicorp/consul/sdk v0.16.3 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-bexpr v0.1.2 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
