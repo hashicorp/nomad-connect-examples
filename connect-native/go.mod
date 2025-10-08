@@ -5,7 +5,7 @@ go 1.25.0
 require (
 	github.com/gorilla/mux v1.8.1
 	github.com/hashicorp/consul v1.21.5
-	github.com/hashicorp/consul/api v1.32.3
+	github.com/hashicorp/consul/api v1.32.4
 	github.com/hashicorp/go-uuid v1.0.3
 	github.com/pkg/errors v0.9.1
 )
@@ -64,7 +64,6 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/mitchellh/go-testing-interface v1.14.1 // indirect
 	github.com/mitchellh/hashstructure v0.0.0-20170609045927-2bca23e0e452 // indirect
-	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
 	github.com/planetscale/vtprotobuf v0.6.1-0.20240319094008-0393e58bdf10 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
