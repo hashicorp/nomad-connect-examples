@@ -239,8 +239,8 @@ github.com/hashicorp/consul-awsauth v0.0.0-20250825122907-9e35fe9ded3a h1:Qd0N8l
 github.com/hashicorp/consul-awsauth v0.0.0-20250825122907-9e35fe9ded3a/go.mod h1:++exZ1sI8JLIv4QvzGvTjZdf1eZARoZcaNEjNT9SZYA=
 github.com/hashicorp/consul-net-rpc v0.0.0-20221205195236-156cfab66a69 h1:wzWurXrxfSyG1PHskIZlfuXlTSCj1Tsyatp9DtaasuY=
 github.com/hashicorp/consul-net-rpc v0.0.0-20221205195236-156cfab66a69/go.mod h1:svUZZDvotY8zTODknUePc6mZ9pX8nN0ViGwWcUSOBEA=
-github.com/hashicorp/consul/api v1.33.2 h1:Q6mE0WZsUTJerlnl9TuXzqrtZ0cKdOCsxcZhj5mKbMs=
-github.com/hashicorp/consul/api v1.33.2/go.mod h1:K3yoL/vnIBcQV/25NeMZVokRvPPERiqp2Udtr4xAfhs=
+github.com/hashicorp/consul/api v1.33.3 h1:6ttDO8Os/lqwaus7nJxJaeiUw2o7GWKoQ1jexAFPdEQ=
+github.com/hashicorp/consul/api v1.33.3/go.mod h1:1HoAkxkKpC8A9lsUYs7QCMfSSKiz6+vlfrI1J3PUEeI=
 github.com/hashicorp/consul/envoyextensions v0.9.2 h1:78/i3IM72MEV0UBFrMdzQ9agQtNWU8Bk6gigjnH6xY8=
 github.com/hashicorp/consul/envoyextensions v0.9.2/go.mod h1:aZrZ4yZ6RCLuaRJYDvG77vtT9J7xGTPqodqkd8klNz8=
 github.com/hashicorp/consul/proto-public v0.7.1 h1:jWckjXYpgq92qg9TpR7Y9/cAjLvwjHAb8iP8XdZYk8c=
