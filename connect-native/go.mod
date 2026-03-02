@@ -4,7 +4,7 @@ go 1.25.7
 
 require (
 	github.com/gorilla/mux v1.8.1
-	github.com/hashicorp/consul v1.22.3
+	github.com/hashicorp/consul v1.22.5
 	github.com/hashicorp/consul/api v1.33.4
 	github.com/hashicorp/go-uuid v1.0.3
 	github.com/pkg/errors v0.9.1
@@ -18,7 +18,7 @@ require (
 	github.com/Microsoft/go-winio v0.6.1 // indirect
 	github.com/armon/go-metrics v0.4.1 // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
-	github.com/aws/aws-sdk-go v1.55.7 // indirect
+	github.com/aws/aws-sdk-go-v2 v1.41.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/circonus-labs/circonus-gometrics v2.3.1+incompatible // indirect
@@ -44,7 +44,7 @@ require (
 	github.com/hashicorp/go-msgpack v1.1.5 // indirect
 	github.com/hashicorp/go-msgpack/v2 v2.1.2 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
-	github.com/hashicorp/go-retryablehttp v0.7.7 // indirect
+	github.com/hashicorp/go-retryablehttp v0.7.8 // indirect
 	github.com/hashicorp/go-rootcerts v1.0.2 // indirect
 	github.com/hashicorp/go-sockaddr v1.0.5 // indirect
 	github.com/hashicorp/go-syslog v1.0.0 // indirect
