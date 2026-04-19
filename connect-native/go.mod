@@ -1,11 +1,11 @@
 module nomadproject.io/demo/connect-native
 
-go 1.25.8
+go 1.25.9
 
 require (
 	github.com/gorilla/mux v1.8.1
 	github.com/hashicorp/consul v1.22.6
-	github.com/hashicorp/consul/api v1.34.0
+	github.com/hashicorp/consul/api v1.34.1
 	github.com/hashicorp/go-uuid v1.0.3
 	github.com/pkg/errors v0.9.1
 )
