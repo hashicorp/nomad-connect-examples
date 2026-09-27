@@ -6,7 +6,7 @@ require (
 	github.com/gorilla/mux v1.8.1
 	github.com/hashicorp/consul v1.22.7
 	github.com/hashicorp/consul/api v1.34.5
-	github.com/hashicorp/go-uuid v1.0.3
+	github.com/hashicorp/go-uuid v1.0.4
 	github.com/pkg/errors v0.9.1
 )
 
